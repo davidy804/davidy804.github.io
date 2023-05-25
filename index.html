@@ -1,106 +1,138 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>David Yuan's Portfolio</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <section class="header">
-            <div class="logo" style="display:block">
-                <a href="" class="logo"> <h1>DY</h1> </a>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Yuan's Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="logo" style="display:block">
+            <a href="" class="logo">
+                <h1>DY</h1>
+            </a>
+        </div>
+    </section>
+    <div class="toggleText">Toggle Next Page</div>
+    <label class="toggle">
+        <i class="fa fa-close toggle-off"></i>
+        <input type="checkbox" class="toggle-input" checked>
+        <div class="toggle-controller default-success"></div>
+        <i class="fa fa-check toggle-on active"></i>
+    </label>
+    <div class="nextText">
+        Click anywhere to go to the next page.
+    </div>
+    <div class="page">
+        <section class="banner">
+            <div class="pfp"></div>
+            <div class="projectText">
+                ABOUT ME
+            </div>
+            <div class="about">
+                <div class="aboutText">
+                    Hello!<br>I am a full-stack developer with a passion to see things come to life.<br>I am passionate
+                    about learning new technologies, hobbies, or anything with intricate engineering.<br>I love seeing
+                    all the little things done perfectly to produce one solid product.<br>Thank you for checking out my
+                    portfolio!
+                </div>
+            </div>
+            <div class="view">
+                <div class="left">
+                    <div class="darkblue"></div>
+                </div>
+                <div class="right">
+                    <div class="lightblue"></div>
+                </div>
             </div>
         </section>
-        <div class="toggleText">Toggle Next Page</div>
-        <label class="toggle">
-            <i class="fa fa-close toggle-off"></i>
-            <input type="checkbox" class="toggle-input" checked>
-            <div class="toggle-controller default-success"></div>
-            <i class="fa fa-check toggle-on active"></i>
-        </label>
-        <div class="nextText">
-            Click anywhere to go to the next page.
-        </div>
-        <div class="page">       
-            <section class="banner">
-                <div class="projectText">
-                    ABOUT ME
+    </div>
+    <div class="page">
+        <section class="banner">
+            <div class="projectText">
+                CONTACT ME
+            </div>
+            <div class="contactList">
+                <ul class="sci">
+                    <li><a style="line-height: 67px;" title="Resume" href="images/resume.pdf"><img
+                                src="images/resume.svg"></a></li>
+                    <li><a style="line-height: 71px;" title="davidy804@gmail.com"
+                            href="mailto: davidy804@gmail.com"><img src="images/email.svg"></a></li>
+                    <li><a style="line-height: 75px;" title="LinkedIn"
+                            href="https://www.linkedin.com/in/david-yuan-5822b9192/"><img src="images/linkedin.svg"></a>
+                    </li>
+                    <li><a style="line-height: 70px;" title="GitHub" href="https://github.com/davidy804"><img
+                                src="images/github.svg"></a></li>
+                </ul>
+            </div>
+            <div class="view">
+                <div class="left">
+                    <div class="darkyellow"></div>
                 </div>
-                <div class="about">
-                    <div class="pfp">
-                        <img src="images/me.png">
+                <div class="right">
+                    <div class="lightyellow"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="page">
+        <section class="banner">
+            <div class="projectText">
+                PORTFOLIO
+            </div>
+            <div class="projectList">
+                <div class="box">
+                    <div class="imgBx">
+                        <a href="https://dergearsite.web.app"><img src="images/dergear.png" class="fitImg"></a>
                     </div>
-                    <div class="aboutText"></div>
-                </div>
-                <div class="view">
-                    <div class="left"><div class="darkblue"></div></div>
-                    <div class="right"><div class="lightblue"></div></div>
-                </div>
-            </section>
-        </div>
-        <div class="page">       
-            <section class="banner">
-                <div class="projectText">
-                    CONTACT ME
-                </div>
-                <div class="contactList">
-                    <ul class="sci">
-                        <li><a style="line-height: 67px;" title="Resume" href="images/resume.pdf"><img src="images/resume.svg"></a></li>
-                        <li><a style="line-height: 71px;" title="davidy804@gmail.com" href="mailto: davidy804@gmail.com"><img src="images/email.svg"></a></li>
-                        <li><a style="line-height: 75px;" title="linkedin" href="linkedin"><img src="images/linkedin.svg"></a></li>
-                        <li><a style="line-height: 70px;" title="github" href="https://github.com/davidy804"><img src="images/github.svg"></a></li>
-                    </ul>
-                </div>
-                <div class="view">
-                    <div class="left"><div class="darkyellow"></div></div>
-                    <div class="right"><div class="lightyellow"></div></div>
-                </div>
-            </section>
-        </div>
-        <div class="page"> 
-            <section class="banner">
-                <div class="projectText">
-                    PORTFOLIO
-                </div>
-                <div class="projectList">
-                    <div class="box">
-                        <div class="imgBx">
-                            <a href="https://dergearsite.web.app"><img src="images/dergear.png" class="fitImg"></a>
-                        </div>
-                        <div class="content">
-                            <a href="https://dergearsite.web.app"><h2>Gear Reviews<br><span>Angular CSS Firebase Git HTML</span></h2></a>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBx">
-                            <a href="https://deranimerec.web.app"><img src="images/derec.png" class="fitImg"></a>
-                        </div>
-                        <div class="content">
-                            <a href="https://deranimerec.web.app"><h2>Anime Recommendations<br><span>CSS Firebase Git HTML JQuery</span></h2></a>
-                        </div>
+                    <div class="content">
+                        <a href="https://dergearsite.web.app">
+                            <h2>Gear Reviews<br><span>Angular CSS Firebase Git HTML</span></h2>
+                        </a>
                     </div>
                 </div>
-                <div class="view">
-                    <div class="left"><div class="coral"></div></div>
-                    <div class="right"><div class="peach"></div></div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href="https://deranimerec.web.app"><img src="images/derec.png" class="fitImg"></a>
+                    </div>
+                    <div class="content">
+                        <a href="https://deranimerec.web.app">
+                            <h2>Anime Recommendations<br><span>CSS Firebase Git HTML JQuery</span></h2>
+                        </a>
+                    </div>
                 </div>
-            </section>
-        </div>
-        <div class="page">
-            <section class="banner">
-                <div class="bannerText">
-                    DAVID YUAN
+            </div>
+            <div class="view">
+                <div class="left">
+                    <div class="coral"></div>
                 </div>
-                <div class="view">
-                    <div class="left"><div class="sage"></div></div>
-                    <div class="right"><div class="cream"></div></div>
+                <div class="right">
+                    <div class="peach"></div>
                 </div>
-            </section>
-        </div>
-    </body>
+            </div>
+        </section>
+    </div>
+    <div class="page">
+        <section class="banner">
+            <div class="bannerText">
+                DAVID YUAN
+            </div>
+            <div class="view">
+                <div class="left">
+                    <div class="sage"></div>
+                </div>
+                <div class="right">
+                    <div class="cream"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
 </html>
