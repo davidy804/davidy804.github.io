@@ -409,7 +409,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 25vh;
+    margin-top: 20vh;
     z-index: 2;
 }
 
@@ -466,9 +466,51 @@ section {
     opacity: 0.8;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1600px) {
+    .box {
+        min-width: 225px;
+        height: 300px;
+    }
+    
+    .box .imgBx {
+        height: 225px;
+    }
+
+    .box .content {
+        height: 70px;
+    }
+
+    .box .content h2 {
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1080px) {
     .pfp {
         right: 2vw;
+    }
+
+    .projectList {
+        margin-top: 15vh;
+    }
+
+    .box {
+        min-width: 200px;
+        height: 200px;
+    }
+    
+    .box .imgBx {
+        height: 200px;
+    }
+
+    .box .content {
+        background-color: #22222286;
+        height: 65px;
+    }
+
+    .box .content h2 {
+        font-size: 1em;
     }
 }
 
@@ -519,11 +561,6 @@ section {
         height: 200px;
     }
 
-    .box .content {
-        background-color: #22222286;
-        height: 45px;
-    }
-
     .box .content h2 {
         color: #fff;
         font-size: 0.9em;
@@ -538,7 +575,7 @@ section {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
     .bannerText {
         font-size: 1.75em;
     }
@@ -558,6 +595,22 @@ section {
 
     .contactList ul li {
         margin: 0 10px;
+    }
+
+    .box {
+        position: relative;
+        max-width: 300px;
+        min-width: initial;
+        width: 300px;
+        height: 100px;
+    }
+
+    .box .imgBx {
+        height: 100px;
+    }
+
+    .fitImg {
+        object-fit: cover;
     }
 }
 
